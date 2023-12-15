@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tabela</title>
+    <style>
+      body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+      }
+      table,
+      td,
+      th {
+        border: 1px solid gray;
+        text-align: left;
+      }
+      table {
+        margin-left: 5vw;
+        width: 60%;
+        border-collapse: collapse;
+        height: 60vh;
+      }
+      h1{
+        color: orangered;
+        margin-left: 5vw;
+      }
+   
+      #btn-row{
+        text-align: right;
+      }
+      
+   
+    </style>
+  </head>
+  <body>
+
+   
+    <form>
+      <h1>STUDENT EXERCISE</h1>
+            <table >
+              <tr>
+                <th colspan="2">Testform</th>
+              </tr>
+              <tr >
+            <td ><label for="name">Name</label></td>
+           <td> <input type="text" name="fname" required /></td>
+          </tr>
+          <tr>
+           <td><label for="password">Password</label></td>
+            <td><input type="password" name="passw" required /></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+          
+            <input type="radio" name="male" />
+            <label for="gender1">Male</label><br />
+            <input type="radio" name="female" />
+            <label for="gender2">Female</label><br />
+          </td>
+          </tr>
+          <tr>
+           <td> <label type="text">Continent</label></td>
+           <td> <select name="continent" id="continent" required>
+              <option value="">Please select...</option>
+              <option value="Africa">Africa</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
+              <option value="Oceania">Oceania</option>
+            </select>
+          </td>
+          </tr>
+          <tr >
+            <td >Meals</td>
+            <td>
+           
+            <input type="checkbox" name="breakfast" />
+            <label for="meal1">Breakfast</label><br>
+            <input type="checkbox" name="lunch" />
+            <label for="meal2">Lunch</label><br />
+            <input type="checkbox" name="dinner" />
+            <label for="meal3">Dinner</label>
+          </td>
+          </tr>
+          <tr >
+           <td> <label type="text">Remark</label></td>
+           <td><textarea name="remark" rows="4" cols="50"></textarea></td> 
+          </tr>
+        </tr> 
+        <td colspan="2" id="btn-row">
+          <button type="submit" class="button-send">Send</button>
+          <button type="reset" class="button-cancel">Cancel</button>
+        </td>
+        </tr>
+      </table>
+   
+    </form>
+
+  </body>
+</html>
