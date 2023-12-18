@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <fieldset>
+        <legend>Sign up Form</legend>
+        <ul style="list-style: none">
+          <li>
+            <label for="name">First Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="First name"
+              required
+              autofocus
+            />
+          </li>
+          <li>
+            <label for="fname">Second Name</label>
+            <input
+              id="fname"
+              name="name"
+              type="text"
+              placeholder="Last name"
+              required
+              autofocus
+            />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="example@domain.com"
+              required
+            />
+            <label for="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="sdljf#$@dfh"
+              required
+            />
+          </li>
+          <li>
+            <label>What did you like about this gig?</label>
+            <textarea name="comment" rows="4" cols="20"></textarea>
+          </li>
+          <li>
+            <label>Tell us your expirience:</label>
+            <textarea name="comment" rows="10" cols="50"></textarea>
+            <button type="button">Sign up</button>
+            <button type="button">Reset form</button>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <hr />
+    <h2>Raido Buttons Forms</h2>
+    <form action="#">
+      <p>Please select your favorite genre:</p>
+        <input type="radio" name="fav_ genre" />  
+      <label for="pop">Pop</label>   <input type="radio" name="fav_ genre" />  
+      <label for="rock">Rock</label>   <input type="radio" name="fav_genre" />  
+      <label for="jazz">Jazz</label>
+    </form>
+    <hr />
+    <form action="#">
+      <p>Please select your favorite music services(s):</p>
+        <input type="checkbox" name="fav_ services" />  
+      <label for="html">iTunes</label>  
+      <input type="radio" name="fav_ services" />  
+      <label for="css">Live FM </label>  
+      <input type="radio" name="fav_services" />  
+      <label for="javascript">Spotify</label>
+    </form>
+    <hr />
+    <form action="#">
+      <label for="device"
+        >Please select what device do you lisnten to music on</label
+      >
+      <select name="device">
+        Courses Srbija
+        <option value="Please select device" disabled selected hidden>
+          Please select device
+        </option>
+        <option value="volvo">phone</option>
+        <option value="saab">pc</option>
+        <option value="opel">mp3player</option>
+        <option value="audi">radio</option>
+      </select>
+    </form>
+    <br />
+    <hr />
+    <form action="">
+      <label for="instruments">Select instrument you play on:</label>
+      <select name="instriments" multiple>
+        <option value="volvo">Gitar</option>
+        <option value="saab">Bass</option>
+        <option value="opel">Drums</option>
+        <option value="audi">Klavir</option>
+      </select>
+      <br /><br />
+    </form>
+    <hr />
+    <form>
+      <label>Upload your song:</label> <input type="file" value="Chose File" />
+    </form>
+  </body>
+</html>
