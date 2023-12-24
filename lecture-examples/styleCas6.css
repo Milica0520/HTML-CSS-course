@@ -1,0 +1,36 @@
+/* Zvjezdica je univerzalni selektor*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: green;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+/* header {
+  background-color: rgba(215, 215, 120, 0.895);
+}
+h1 {
+  color: palevioletred;
+  margin-bottom: 15px;
+}
+.navigation {
+  background-color: rgba(128, 128, 128, 0.868);
+  margin: 15px;
+}
+.section-links {
+  margin-bottom: 15px;
+}
+.private-event {
+  background: yellow;
+}
+p {
+  color: red;
+} */
