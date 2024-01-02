@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(255, 0, 0, 0.66);
+}
+
+/* .orbit {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+} */
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  margin: auto;
+  animation: circle 1s linear infinite;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-50px) rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg) translate(-50px) rotate(360deg);
+  }
+}
